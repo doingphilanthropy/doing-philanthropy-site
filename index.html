@@ -41,7 +41,27 @@
     .donate-box { border:2px solid var(--brand); padding:18px; border-radius:16px; background:#f8fbff; }
     .note { color: var(--muted); font-size: 14px; }
     img.responsive { max-width: 100%; height: auto; border-radius: 12px; }
-  </style>
+  </style>/
+* HERO background */
+.hero-planet .hero__media{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(80% 80% at 50% 20%, rgba(2,6,23,0.25), transparent 60%),
+    url('images/hero-earth-2880x1620.jpg') center / cover no-repeat; /* <-- se l'hai chiamata hero.jpg, metti 'images/hero.jpg' */
+  transform: scale(1.02);
+  animation: subtle-zoom 14s ease-in-out forwards;
+} <!-- HERO — Doing Philanthropy -->
+<section class="hero-planet" id="home" aria-label="Fondazione Doing Philanthropy">
+  <div class="hero__media" role="img" aria-label="La Terra vista dallo spazio"></div>
+  <div class="wrap hero__inner">
+    <h1 class="hero__title">Ogni essere umano ha diritto alla felicità.</h1>
+    <p class="hero__subtitle">Fondazione Doing Philanthropy O.N.L.U.S.</p>
+    <div class="hero__cta">
+      <a class="btn btn-primary" href="#progetti">Scopri i progetti</a>
+      <a class="btn btn-ghost" href="#trasparenza">Trasparenza</a>
+    </div>
+  </div>
+</section>
   <script type="application/ld+json">
   {"@context": "https://schema.org", "@type": "NGO", "name": "Fondazione Doing Philanthropy O.N.L.U.S.", "slogan": "Think Doing – il pensiero che agisce", "url": "https://doingphilanthropy.org", "email": "info@doingphilanthropy.org", "address": {"@type": "PostalAddress", "streetAddress": "Via Col di Lana 12", "addressLocality": "Vercelli", "postalCode": "13100", "addressCountry": "IT"}}
   </script>
